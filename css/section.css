@@ -1,0 +1,80 @@
+.section__headline {
+    background-color: hsla(0, 2%, 56%, 0.614);
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.section__paragrap {
+    font-size: medium;
+    line-height: 1.5;
+}
+
+.section__img--photoTravel {
+    max-width: 250px;
+    padding: 1px;
+}
+
+.section__link {
+    color: rgb(161, 44, 97);
+    text-decoration: none;
+
+}
+
+.section__img--photoTrekking {
+    max-width: 250px;
+    padding: 1px;
+}
+
+.section__img--photoTatryRadziejowa {
+    max-width: 440px;
+    padding: 1px;
+}
+
+.section__img--photoClimbing {
+    max-width: 250px;
+    padding: 1px;
+}
+
+.section__img--photoSokoliki {
+    max-width: 440px;
+    padding: 1px;
+}
+
+.section__paragraph--highlight {
+    color: purple;
+}
+
+.section__img--logo {
+    width: 250px;
+    height: 150px;
+}
+
+.section__button {
+    border-radius: 100%;
+    border-style: dotted;
+    width: 3cm;
+    height: 2cm;
+    font-size: 10px;
+    font-family: Georgia;
+    font-weight: bold;
+    background-color: rgb(167, 136, 153);
+    padding: 1px;
+}
+
+.section__img--logoTopr {
+    height: 150px;
+}
+
+.section__img--logoClimb {
+    width: 150px;
+    height: 100px;
+}
+
+.section__button--hideButton {
+    font-family: Georgia;
+    border-style: dotted;
+    background-color: hsla(0, 2%, 56%, 0.614);
+    padding: 3px;
+
+}

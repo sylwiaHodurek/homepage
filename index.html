@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona-Sylwia Hodurek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="title">Sylwia Hodurek</header>
+    <nav class="navigation">
+        <ul>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#O-mnie">O mnie</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#Moje-zainteresowania">Moje zainteresowania</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#Podróże">Podróże</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#Trekking">Trekking</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href=#Wspinaczka>Wspinaczka</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <img class="main__img" src="images/profilowe.jpg" alt="Moje powitalne zdjęcie">
+        <h1 id="O-mnie" class="main__headline">O mnie</h1>
+        <p class="main__paragraph">Cześć, jestem Sylwia:)</p>
+        <p class="main__paragraph">Na codzień mieszkam i pracuję w Krakowie.
+            Lubię aktywnie spędzać czas i <b>GoodLoody!</b> Jeśli będziesz w Krakowie <em>musisz je
+                koniecznie
+                spróbować!</em>
+        </p>
+    </main>
+    <article class="article">
+        <h2 id="Moje-zainteresowania" class="article__headline">Moje zainteresowania</h2>
+        <p class="article__paragraph">Jak już wcześniej wspomniałam, lubię aktywnie spędzać czas. <br> Nic więc
+            dziwnego, że moje
+            zainteresowania są dość intensywne :P</p>
+    </article>
+    <section class="section">
+        <h3 id="Podróże" class="section__headline">Podróże</h3>
+        <div class="js-travels">
+            <p class="section_paragraph">Na pewno każdy z Was ma swoje ulubione miejsce, które chętnie odwiedza. Moim są
+                Włochy.<br>
+                W
+                maju byłam na Sycylii i uważam, że jest to jedno z tych miejsc na ziemi, które warto odwiedzić i
+                wejść
+                na Etnę!</p>
+            <div>
+                <img class="section__img--photoTravel" src="images/Taormina.jpg" alt="Taormina">
+                <img class="section__img--photoTravel" src="images/Etna.jpg" alt="Etna">
+                <img class="section__img--photoTravel" src="images/Etna krater.jpg" alt="Etna krater">
+            </div>
+            <p>Jeśli będziecie na Sycylii, koniecznie spróbujcie tamtejszej kuchni.<br> Poniżej znajdziecie miejsca, do
+                których zdecydowanie warto zajrzeć!</p>
+            <div>
+                <table class="table">
+                    <caption class="table__caption">Najlepsze restauracje we wschodniej części wyspy</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Nazwa</th>
+                        <th class="table__cell table__cell--header" scope="col">Miejscowość</th>
+                        <th class="table__cell table__cell--header" scope="col">Rodzaj jedzenia</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Antica Sycylia</th>
+                        <td class="table__cell">Catania</td>
+                        <td class="table__cell">Owoce morze/pizza</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Bam Bar</th>
+                        <td class="table__cell">Taormina</td>
+                        <td class="table__cell">Granita/Ciastka</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Caseificio Borderi</th>
+                        <td class="table__cell">Syrakuzy</td>
+                        <td class="table__cell">Najpyszniejsze kanapki &#128525</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Rosticceria Cristina</th>
+                        <td class="table__cell">Taormina</td>
+                        <td class="table__cell">Arancini</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                <button class="section__button js-buttonSicily">Kliknij, aby otworzyć link</button>
+            </p>
+            <p class="js-iconSicily">Po więcej treści odsyłam Was do bardzo ciekawego bloga. Znajdziecie tu masę
+                informacji.
+                Nie tylko o Sycylii :) <br> Kliknijcie w logo, aby przejść do strony.
+                <br><a class="section__link" href="https://italia-by-natalia.pl/" target="_blank"
+                    rel="noreferrer noopener"><img class="section__img--logo" src="images/Sycylia.PNG"
+                        alt="Italia by Natalia"></a>
+            </p>
+        </div>
+        <button class="section__button--hideButton js-buttonHideTravels">Ukryj treść</button>
+    </section>
+    <section class="section">
+        <h3 id="Trekking" class="section__headline">Trekking</h3>
+        <div class="js-trekking">
+            <p class="section__paragraph">Góry, górki i pagórki. Na szczęście w Polsce jest ich sporo i tych małych i
+                tych dużych <br>
+                Uwielbiam trekking! 30km? Żaden problem, choć nie powiem, bywa ciężko:) Ale jak tu nie iść dalej i
+                wyżej, kiedy widoki są tak piękne?
+            </p>
+            <img class="section__img--photoTrekking" src="images/Turbacz.jpg" alt="Turbacz">
+            <img class="section__img--photoTatryRadziejowa" src="images/Czerwone Wierchy.jpg" alt="Czerwone Wierchy">
+            <img class="section__img--photoTatryRadziejowa" src="images/Radziejowa.jpg" alt="Radziejowa">
+            <p>
+                <button class="section__button js-buttonTatry">Kliknij, aby otworzyć link</button>
+            </p>
+            <p class="js-iconTatry"><strong>Bardzo ważne!</strong> Przed wyjściem w Tatry (i nie tylko) koniecznie
+                sprawdzcie
+                aktualne warunki pogodowe.<br> Kliknijcie w logo, aby przejść do strony.
+                <br><a class="section__link" href="https://www.topr.pl/#warunki" target="_blank"
+                    rel="noreferrer noopener"><img class="section_img--logoTopr" src="images/TOPR.png" alt="TOPR"></a>
+            </p>
+        </div>
+        <button class="section__button--hideButton js-buttonHideTrekking">Ukryj treść</button>
+    </section>
+    <section class="section">
+        <h3 id="Wspinaczka" class="section__headline">Wspinaczka</h3>
+        <div class="js-climbing">
+            <p class="section__paragraph"> Wszystko zaczęło się ponad 5 lat temu...To chyba jedno z tych zainteresowań,
+                o którym mogę
+                długo opowiadać. Pasją do tego sportu zaraziłam się od mojego brata. To on po raz pierwszy zabrał mnie
+                na
+                ściankę wspinaczkową, no i tak to się wszystko zaczęło.
+                <br> Według niektórych,<strong class="section__paragraph--highlight">wspinaczka może być sportem
+                    niebiezpiecznymi ryzykownym. </strong><br> Może
+                być,
+                jeśli nie przestrzega się wszystkich zasad! A tych jest sporo: <span><i>
+                        przewiązywanie na stanowisku, asekuracja, prowadzenie, wielowyciągi, węzeł na końcu liny,
+                        itp.</i></span><br> Przy ich odpowiednim zastosowaniu, można być spokojnym :) <br> Wspinam się
+                na
+                sztucznych ścianach i w skałach.
+                Miejsc jest sporo,
+                a widoki przepiękne :)
+            </p>
+            <img class="section__img--photoClimbing" src="images/Rysa Zagajewskiego.jpg" alt="Rysa Zagajewskiego">
+            <img class="section__img--photoSokoliki" src="images/Sokoliki.jpg" alt="Sokoliki">
+            <img class="section__img--photoClimbing" src="images/Dolina Kobylanska.jpg" alt="Dolina Kobylańska">
+            <p>
+                <button class="section__button js-buttonClimbing">Kliknij, aby otworzyć link</button>
+            </p>
+            <p class="js-iconClimbing">Jeśli chcecie przeczytać więcej na temat tego sportu odsyłam Was do strony ze
+                wszystkimi informacjami wspinaczkowymi z Polski i ze świata.<br> Kliknijcie w logo, aby przejść do
+                strony.
+                <br><a class="section__link" href="https://wspinanie.pl/" target="_blank" rel="noreferrer noopener"><img
+                        class="section__img--logoClimb" src="images/Wspinaczka.png" alt="Wspinanie.pl"></a>
+            </p>
+        </div>
+        <button class="section__button--hideButton js-buttonHideClimbing">Ukryj treść</button>
+    </section>
+    <article class="article">
+        <h3 class="article__headline article__headline--lastHeadline">Skąd pomysł na programowanie?</h3>
+        <p class="article__paragraph">Pomysł już dawno narodził się w mojej głowie, ale z mobilizacją bywało różnie.<br>
+            Jakiś czas
+            temu,
+            przy przeglądaniu ofert pracy związanych z moim obecnym <br> doświadczeniem, zauważyłam, że najczęściej <b>
+                poszukiwani są programiści.</b><br> Chyba wtedy do mnie dotarło, że dłużej już nie mogę tego odkładać :)
+        </p>
+    </article>
+    <footer class="footer">Copyright by Sylwia Hodurek</footer>
+</body>
+
+</html>

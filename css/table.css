@@ -1,0 +1,37 @@
+.table {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-collapse: collapse;
+    overflow-x: auto;
+    margin: auto;
+
+}
+
+.table__caption {
+    color: rgb(20, 20, 20);
+    font-family: Georgia;
+    font-style: oblique;
+    font-weight: bold;
+    caption-side: top;
+    margin: 10px;
+}
+
+.table__row:nth-child(even) {
+    background: #cab6c8;
+}
+
+.table__row:hover {
+    background: #ddd3e2a2;
+
+}
+
+.table__cell {
+    border: 1px solid #b0a6b0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.table__cell--header {
+    background-color: rgb(167, 136, 153);
+
+}

@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0 15px;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.title {
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+
+}
+
+.js-iconSicily {
+    display: none;
+}
+
+.js-iconTatry {
+    display: none;
+}
+
+.js-iconClimbing {
+    display: none;
+}
+
+.js-openIcon {
+    display: contents;
+    font-size: medium;
+    font-family: Georgia;
+    line-height: 1.5;
+}
+
+.js-hideTravels {
+    display: none;
+}
+
+.js-hideTrekking {
+    display: none;
+
+}
+
+.js-hideClimbing {
+    display: none;
+
+}
+
+.footer {
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+.navigation {
+    background-color: hsla(0, 2%, 56%, 0.614);
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.navigation__listItem {
+    list-style: none;
+    margin: 8px;
+    display: inline-block;
+}
+
+.navigation__link {
+    color: rgb(161, 44, 97);
+    text-decoration: none;
+
+}
+
+.navigation__link:focus {
+    outline: 2px solid currentColor;
+}
+
+.navigation__link:hover {
+    color: rgb(167, 136, 153);
+    outline: none;
+}

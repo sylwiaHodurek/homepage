@@ -1,0 +1,19 @@
+.main__headline {
+    background-color: hsla(0, 2%, 56%, 0.614);
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.main__paragraph {
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.main__img {
+    width: 200px;
+    box-shadow: 5px -5px 34px 0px #B6A3B7;
+    margin-top: 20px;
+    border-radius: 20px;
+}

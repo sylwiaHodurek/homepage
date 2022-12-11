@@ -1,0 +1,19 @@
+.article__headline {
+    background-color: hsla(0, 2%, 56%, 0.614);
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.article__headline--lastHeadline {
+    background-color: hsla(0, 2%, 56%, 0.614);
+    color: rgb(161, 44, 97);
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.article__paragraph {
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.5;
+}
