@@ -1,4 +1,4 @@
-function welcome () {
+const welcome => () {
     console.log("Witam wszystkich, którzy tu zaglądają :)!");
 }
 
