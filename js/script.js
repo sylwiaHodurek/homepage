@@ -1,4 +1,8 @@
-console.log("Cześć!");
+function welcome () {
+    console.log("Witam wszystkich, którzy tu zaglądają :)!");
+}
+
+welcome (); 
 
 let buttonSicily = document.querySelector(".js-buttonSicily");
 let iconSicily = document.querySelector(".js-iconSicily");
