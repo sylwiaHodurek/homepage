@@ -1,82 +1,148 @@
-const welcome => () {
-    console.log("Witam wszystkich, którzy tu zaglądają :)!");
+{
+
+
+    const welcome = () => {
+        console.log("Witam wszystkich, którzy tu zaglądają :)!");
+    }
+
+    welcome();
+
+    // let buttonSicily = document.querySelector(".js-buttonSicily");
+    // let iconSicily = document.querySelector(".js-iconSicily");
+    // let buttonHideTravels = document.querySelector(".js-buttonHideTravels")
+    // let travels = document.querySelector(".js-travels")
+    // // let buttonTatry = document.querySelector(".js-buttonTatry");
+    // let iconTatry = document.querySelector(".js-iconTatry");
+    // let buttonHideTrekking = document.querySelector(".js-buttonHideTrekking")
+    // let trekking = document.querySelector(".js-trekking")
+    // let buttonClimbing = document.querySelector(".js-buttonClimbing");
+    // let iconClimbing = document.querySelector(".js-iconClimbing");
+    // let buttonHideClimbing = document.querySelector(".js-buttonHideClimbing")
+    // let climbing = document.querySelector(".js-climbing")
+
+
+    // const onButtonsTravelClick = (button, travels,iconSicily) => {
+    //     button.addEventListener("click", () => {
+    //         iconSicily.classList.toggle(".section__button");
+    //         iconSicily.innerText = buttonSicily.contains(".section__button") ? "Ukryj" : "Kliknij, aby otworzyć link";
+
+
+    //     })
+    // };
+
+
+    // const init = () => {
+
+    //     const buttonSicily = document.querySelector(".js-buttonSicily");
+    //     const iconSicily = document.querySelector(".js-iconSicily");
+    //     const buttonHideTravels = document.querySelector(".js-buttonHideTravels");
+    //     const travels = document.querySelector(".js-travels");
+
+
+    //     onButtonsTravelClick(buttonSicily);
+    //     onButtonsTravelClick(iconSicily);
+    //     onButtonsTravelClick(buttonHideTravels);
+    //     onButtonsTravelClick(travels);
+
+
+    // };
+
+    // init();
+
+    // }
+
+
+
+    const hideSection = (section, button) => {
+        button.addEventListener("click", () => {
+            section.classList.toggle(".section__button--hideButton");
+            button.innerText = section.classList.contains(".section__button--hideButton") ? "Pokaż treść" : "Ukryj treść";
+        });
+    };
+
+    const init = () => {
+
+        const travels = document.querySelector(".js-travels");
+        const buttonHideTravels = document.querySelector(".js-buttonHideTravels");
+        const buttonHideTrekking = document.querySelector(".js-buttonHideTrekking");
+        const trekking = document.querySelector(".js-trekking");
+        const buttonHideClimbing = document.querySelector(".js-buttonHideClimbing");
+        const climbing = document.querySelector(".js-climbing");
+
+
+        hideSection(travels);
+        hideSection(buttonHideTravels);
+        hideSection(buttonHideTrekking);
+        hideSection(trekking);
+        hideSection(buttonHideClimbing);
+        hideSection(climbing);
+
+
+    };
+
+    init();
+
+
 }
+// buttonSicily.addEventListener("click", () => {
+//     iconSicily.classList.toggle("js-openIcon");
 
-welcome (); 
+//     if (iconSicily.classList.contains("js-openIcon")) {
+//         buttonSicily.innerText = ("Ukryj")
 
-let buttonSicily = document.querySelector(".js-buttonSicily");
-let iconSicily = document.querySelector(".js-iconSicily");
-let buttonHideTravels = document.querySelector(".js-buttonHideTravels")
-let travels = document.querySelector(".js-travels")
-let buttonTatry = document.querySelector(".js-buttonTatry");
-let iconTatry = document.querySelector(".js-iconTatry");
-let buttonHideTrekking = document.querySelector(".js-buttonHideTrekking")
-let trekking = document.querySelector(".js-trekking")
-let buttonClimbing = document.querySelector(".js-buttonClimbing");
-let iconClimbing = document.querySelector(".js-iconClimbing");
-let buttonHideClimbing = document.querySelector(".js-buttonHideClimbing")
-let climbing = document.querySelector(".js-climbing")
+//     }
+//     else {
+//         buttonSicily.innerText = ("Kliknij, aby otworzyć link")
 
+//     }
 
-buttonSicily.addEventListener("click", () => {
-    iconSicily.classList.toggle("js-openIcon");
+// });
 
-    if (iconSicily.classList.contains("js-openIcon")) {
-        buttonSicily.innerText = ("Ukryj")
+// buttonHideTravels.addEventListener("click", () => {
+//     travels.classList.toggle("js-hideTravels");
 
-    }
-    else {
-        buttonSicily.innerText = ("Kliknij, aby otworzyć link")
+//     buttonHideTravels.innerText = travels.classList.contains("js-hideTravels") ? "Pokaż treść" : "Ukryj treść";
 
-    }
+// });
 
-});
+// // buttonTatry.addEventListener("click", () => {
+// //     iconTatry.classList.toggle("js-openIcon");
 
-buttonHideTravels.addEventListener("click", () => {
-    travels.classList.toggle("js-hideTravels");
+// //     if (iconTatry.classList.contains("js-openIcon")) {
+// //         buttonTatry.innerText = ("Ukryj")
 
-    buttonHideTravels.innerText = travels.classList.contains("js-hideTravels") ? "Pokaż treść" : "Ukryj treść";
+// //     }
+// //     else {
+// //         buttonTatry.innerText = ("Kliknij, aby otworzyć link")
 
-});
+// //     }
 
-buttonTatry.addEventListener("click", () => {
-    iconTatry.classList.toggle("js-openIcon");
+// // });
 
-    if (iconTatry.classList.contains("js-openIcon")) {
-        buttonTatry.innerText = ("Ukryj")
+// // buttonHideTrekking.addEventListener("click", () => {
+// //     trekking.classList.toggle("js-hideTrekking");
 
-    }
-    else {
-        buttonTatry.innerText = ("Kliknij, aby otworzyć link")
+// //     buttonHideTrekking.innerText = trekking.classList.contains("js-hideTrekking") ? "Pokaż treść" : "Ukryj treść";
 
-    }
+// // });
 
-});
+// // buttonClimbing.addEventListener("click", () => {
+// //     iconClimbing.classList.toggle("js-openIcon");
 
-buttonHideTrekking.addEventListener("click", () => {
-    trekking.classList.toggle("js-hideTrekking");
+// //     if (iconClimbing.classList.contains("js-openIcon")) {
+// //         buttonClimbing.innerText = ("Ukryj")
 
-    buttonHideTrekking.innerText = trekking.classList.contains("js-hideTrekking") ? "Pokaż treść" : "Ukryj treść";
+// //     }
+// //     else {
+// //         buttonClimbing.innerText = ("Kliknij, aby otworzyć link")
 
-});
+// //     }
 
-buttonClimbing.addEventListener("click", () => {
-    iconClimbing.classList.toggle("js-openIcon");
+// // });
 
-    if (iconClimbing.classList.contains("js-openIcon")) {
-        buttonClimbing.innerText = ("Ukryj")
+// // buttonHideClimbing.addEventListener("click", () => {
+// //     climbing.classList.toggle("js-hideClimbing");
 
-    }
-    else {
-        buttonClimbing.innerText = ("Kliknij, aby otworzyć link")
+// //     buttonHideClimbing.innerText = climbing.classList.contains("js-hideClimbing") ? "Pokaż treść" : "Ukryj treść";
 
-    }
-
-});
-
-buttonHideClimbing.addEventListener("click", () => {
-    climbing.classList.toggle("js-hideClimbing");
-
-    buttonHideClimbing.innerText = climbing.classList.contains("js-hideClimbing") ? "Pokaż treść" : "Ukryj treść";
-
-});
+// // })
