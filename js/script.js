@@ -9,15 +9,17 @@
   const onButtonsClick = (button, icon) => {
     button.addEventListener("click", () => {
       icon.classList.toggle("section__icon--open");
+
       button.innerText = icon.classList.contains("section__icon--open") ? "Ukryj" : "Kliknij, aby otworzyć link";
 
     });
 
   };
 
-  const onButtonsHiddenClick = (button, section) => {
+  const bindSectionToggleButtons = (button, section) => {
     button.addEventListener("click", () => {
       section.classList.toggle("section__hide");
+      
       button.innerText = section.classList.contains("section__hide") ? "Pokaż treść" : "Ukryj treść";
 
     });
@@ -42,9 +44,9 @@
     onButtonsClick(buttonSicily, iconSicily);
     onButtonsClick(buttonTatry, iconTatry);
     onButtonsClick(buttonClimbing, iconClimbing);
-    onButtonsHiddenClick(buttonHideTravels, travels);
-    onButtonsHiddenClick(buttonHideTrekking, trekking);
-    onButtonsHiddenClick(buttonHideClimbing, climbing);
+    bindSectionToggleButtons(buttonHideTravels, travels);
+    bindSectionToggleButtons(buttonHideTrekking, trekking);
+    bindSectionToggleButtons(buttonHideClimbing, climbing);
 
 
   };
