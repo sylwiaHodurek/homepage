@@ -26,39 +26,6 @@ html {
 
 }
 
-.js-iconSicily {
-    display: none;
-}
-
-.js-iconTatry {
-    display: none;
-}
-
-.js-iconClimbing {
-    display: none;
-}
-
-.js-openIcon {
-    display: contents;
-    font-size: medium;
-    font-family: Georgia;
-    line-height: 1.5;
-}
-
-.js-hideTravels {
-    display: none;
-}
-
-.js-hideTrekking {
-    display: none;
-
-}
-
-.js-hideClimbing {
-    display: none;
-
-}
-
 .footer {
     color: rgb(161, 44, 97);
     font-family: Georgia;
