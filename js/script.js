@@ -1,81 +1,58 @@
+{
 
-  {  
-    const welcome = () => {
-        console.log("Witam wszystkich, którzy tu zaglądają :)!");
-    }
+  const welcome = () => {
+    console.log("Witam wszystkich, którzy tu zaglądają :)!");
+  }
 
-    welcome();
+  welcome();
 
+  const onButtonsClick = (button, icon) => {
+    button.addEventListener("click", () => {
+      icon.classList.toggle("js-openIcon");
+      button.innerText = icon.classList.contains("js-openIcon") ? "Ukryj" : "Kliknij, aby otworzyć link";
 
-    let buttonSicily = document.querySelector(".js-buttonSicily");
-    let iconSicily = document.querySelector(".js-iconSicily");
-    
-    buttonSicily.addEventListener("click", () => {
-      iconSicily.classList.toggle("js-openIcon");
-    
-     
-        buttonSicily.innerText =  iconSicily.classList. contains ("js-openIcon") ? "Ukryj" : "Kliknij, aby otworzyć link";
-     
     });
-   
+
+  };
+
+  const onButtonsHiddenClick = (button, section) => {
+    button.addEventListener("click", () => {
+      section.classList.toggle("js-hideTravels");
+      button.innerText = section.classList.contains("js-hideTravels") ? "Pokaż treść" : "Ukryj treść";
+
+    });
+
+  };
+
+  const init = () => {
+
+    const buttonSicily = document.querySelector(".js-buttonSicily");
+    const iconSicily = document.querySelector(".js-iconSicily");
+    const buttonTatry = document.querySelector(".js-buttonTatry");
+    const iconTatry = document.querySelector(".js-iconTatry");
+    const buttonClimbing = document.querySelector(".js-buttonClimbing");
+    const iconClimbing = document.querySelector(".js-iconClimbing");
+    const buttonHideTravels = document.querySelector(".js-buttonHideTravels");
+    const travels = document.querySelector(".js-travels");
+    const buttonHideTrekking = document.querySelector(".js-buttonHideTrekking");
+    const trekking = document.querySelector(".js-trekking");
+    const buttonHideClimbing = document.querySelector(".js-buttonHideClimbing");
+    const climbing = document.querySelector(".js-climbing");
+
+    onButtonsClick(buttonSicily, iconSicily);
+    onButtonsClick(buttonTatry, iconTatry);
+    onButtonsClick(buttonClimbing, iconClimbing);
+    onButtonsHiddenClick(buttonHideTravels, travels);
+    onButtonsHiddenClick(buttonHideTrekking, trekking);
+    onButtonsHiddenClick(buttonHideClimbing, climbing);
 
 
-    // let buttonHideTravels = document.querySelector(".js-buttonHideTravels");
-    // let travels = document.querySelector(".js-travels");
-    
-    // buttonHideTravels.addEventListener("click", () => {
-    //   travels.classList.toggle("js-hideTravels");
-    
-    //   buttonHideTravels.innerText = travels.classList.contains("js-hideTravels")
-    //     ? "Pokaż treść"
-    //     : "Ukryj treść";
-    // });
-    
-    // let buttonTatry = document.querySelector(".js-buttonTatry");
-    // let iconTatry = document.querySelector(".js-iconTatry");
-    
-    // buttonTatry.addEventListener("click", () => {
-    //   iconTatry.classList.toggle("js-openIcon");
-    
-    //   if (iconTatry.classList.contains("js-openIcon")) {
-    //     buttonTatry.innerText = "Ukryj";
-    //   } else {
-    //     buttonTatry.innerText = "Kliknij, aby otworzyć link";
-    //   }
-    // });
-    
-    // let buttonHideTrekking = document.querySelector(".js-buttonHideTrekking");
-    // let trekking = document.querySelector(".js-trekking");
-    
-    // buttonHideTrekking.addEventListener("click", () => {
-    //   trekking.classList.toggle("js-hideTrekking");
-    
-    //   buttonHideTrekking.innerText = trekking.classList.contains("js-hideTrekking")
-    //     ? "Pokaż treść"
-    //     : "Ukryj treść";
-    // });
-    
-    // let buttonClimbing = document.querySelector(".js-buttonClimbing");
-    // let iconClimbing = document.querySelector(".js-iconClimbing");
-    
-    // buttonClimbing.addEventListener("click", () => {
-    //   iconClimbing.classList.toggle("js-openIcon");
-    
-    //   if (iconClimbing.classList.contains("js-openIcon")) {
-    //     buttonClimbing.innerText = "Ukryj";
-    //   } else {
-    //     buttonClimbing.innerText = "Kliknij, aby otworzyć link";
-    //   }
-    // });
-    
-    // let buttonHideClimbing = document.querySelector(".js-buttonHideClimbing");
-    // let climbing = document.querySelector(".js-climbing");
-    
-    // buttonHideClimbing.addEventListener("click", () => {
-    //   climbing.classList.toggle("js-hideClimbing");
-    
-    //   buttonHideClimbing.innerText = climbing.classList.contains("js-hideClimbing")
-    //     ? "Pokaż treść"
-    //     : "Ukryj treść";
-    // });
-    
+  };
+
+  init();
+
+}
+
+
+
+
