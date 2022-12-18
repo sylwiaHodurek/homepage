@@ -1,7 +1,5 @@
 # Sylwia Hodurek - first homepage
 
-![Sylwia](images/profilowe.jpg)
-
 ### https://sylwiahodurek.github.io/homepage/
 
 ### About webpage
