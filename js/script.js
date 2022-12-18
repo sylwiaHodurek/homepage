@@ -8,8 +8,8 @@
 
   const onButtonsClick = (button, icon) => {
     button.addEventListener("click", () => {
-      icon.classList.toggle("js-openIcon");
-      button.innerText = icon.classList.contains("js-openIcon") ? "Ukryj" : "Kliknij, aby otworzyć link";
+      icon.classList.toggle("section__icon--open");
+      button.innerText = icon.classList.contains("section__icon--open") ? "Ukryj" : "Kliknij, aby otworzyć link";
 
     });
 
@@ -17,8 +17,8 @@
 
   const onButtonsHiddenClick = (button, section) => {
     button.addEventListener("click", () => {
-      section.classList.toggle("js-hideTravels");
-      button.innerText = section.classList.contains("js-hideTravels") ? "Pokaż treść" : "Ukryj treść";
+      section.classList.toggle("section__hide");
+      button.innerText = section.classList.contains("section__hide") ? "Pokaż treść" : "Ukryj treść";
 
     });
 
