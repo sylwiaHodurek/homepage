@@ -1,6 +1,6 @@
 # Sylwia Hodurek - first homepage
 
-![Homepage](images/screenHomepage.jpg)
+![Homepage](images/screenHomepage.JPG)
 
 ### https://sylwiahodurek.github.io/homepage/
 
